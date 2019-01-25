@@ -2,6 +2,8 @@
 ---
 $section-headings-color: #4286f4 !default;
 
+@import '{{ site.theme }}';
+
 .page-header {
   color: $header-heading-color;
   text-align: center;
@@ -37,5 +39,3 @@ $section-headings-color: #4286f4 !default;
     font-size: 1.75rem;
   }
 }
-
-@import '{{ site.theme }}';
