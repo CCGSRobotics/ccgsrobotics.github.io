@@ -11,6 +11,16 @@ Electronics (Wiring Harness)
 CAD/CAM Design using CATIA
 Once we have robots we drive them on the terrain outside of TG11 in the D&T Department to prepare for the competition, where we complete a series of challenges to earn points.
 
+### Our Links
+
+Thingiverse (3D Designs): https://www.thingiverse.com/groups/ccgs-robotics/things
+GitHub Organisation: https://github.com/CCGSRobotics
+OARKit Posts: https://groups.google.com/forum/#!topic/oarkit/6ngI1czbHFA
+
+### Our Files
+
+
+
 ### GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/CCGSRobotics/ccgsrobotics.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
