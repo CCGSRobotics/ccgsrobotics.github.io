@@ -13,11 +13,11 @@ Once we have robots we drive them on the terrain outside of TG11 in the D&T Depa
 
 ### Our Links
 
-Thingiverse (3D Designs): https://www.thingiverse.com/groups/ccgs-robotics/things
+[Thingiverse (3D Designs)](https://www.thingiverse.com/groups/ccgs-robotics/things)
 
-GitHub Organisation: https://github.com/CCGSRobotics
+[GitHub Organisation]( https://github.com/CCGSRobotics)
 
-OARKit Posts: https://groups.google.com/forum/#!topic/oarkit/6ngI1czbHFA
+[OARKit Posts](https://groups.google.com/forum/#!topic/oarkit/6ngI1czbHFA)
 
 ### Our Files
 
