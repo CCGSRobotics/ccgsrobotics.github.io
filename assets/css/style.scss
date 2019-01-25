@@ -6,19 +6,6 @@ $section-headings-color: #4286f4 !default;
   text-align: center;
   background-image: url(../../imgs/header.jpg);
   background-size: 100% 100%;
-  
-  @include large {
-    padding: 5rem 6rem;
-  }
-
-  @include medium {
-    padding: 3rem 4rem;
-  }
-
-  @include small {
-    padding: 2rem 1rem;
-  }
-  
 }
 
 @import '{{ site.theme }}';
