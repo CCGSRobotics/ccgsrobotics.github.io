@@ -5,7 +5,7 @@ $section-headings-color: #4286f4 !default;
 .page-header {
   text-align: center;
   background-image: url(../../imgs/header.jpg);
-  background-size: 300px 100px;
+  background-size: contain;
 }
 
 @import '{{ site.theme }}';
