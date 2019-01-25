@@ -3,9 +3,7 @@
 $section-headings-color: #4286f4 !default;
 
 .page-header {
-  color: $header-heading-color;
   text-align: center;
-  background-color: $header-bg-color;
   background-image: url(../../imgs/header.jpg);
 
   @include large {
