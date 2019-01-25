@@ -1,4 +1,17 @@
-## Welcome to GitHub Pages
+## Welcome to the CCGS Robotics Club
+
+The robotics club is a group of keen student engineers and programmers who work to make robots to send to the annual international RoboCup Competition.
+
+There are many elements to the creation of robots, namely:
+
+Software Design
+Networking
+Algorithms (Pathfinding and Automation)
+Electronics (Wiring Harness)
+CAD/CAM Design using CATIA
+Once we have robots we drive them on the terrain outside of TG11 in the D&T Department to prepare for the competition, where we complete a series of challenges to earn points.
+
+### GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/CCGSRobotics/ccgsrobotics.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 
