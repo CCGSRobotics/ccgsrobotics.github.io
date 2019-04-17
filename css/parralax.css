@@ -1,4 +1,6 @@
 .parallax {
+
+
   /* The image used */
   background-image: url("img01.jpg");
   top: -250px;
@@ -9,8 +11,8 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
 
+}
 
 .text {
   background-color: red;
