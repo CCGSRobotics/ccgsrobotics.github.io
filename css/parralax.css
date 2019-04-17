@@ -3,6 +3,10 @@
 
   /* The image used */
   background-image: url("img01.jpg");
+
+  /*background-image: url("https://ccgsrobotics.github.io/css/img01.jpg");*/
+
+
   top: -250px;
   /* Set a specific height */
   height: 800px;
