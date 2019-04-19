@@ -127,12 +127,10 @@ function ReadMore(name, id) {
 
   button.style.opacity = "0";
 
-  setTimeout(deleteitem, 1000, button);
-
-
-  blogitem.insertAdjacentHTML('beforeend', data);
+  setTimeout(deleteitem, 1000, button, data, blogitem);
 }
 
-function deleteitem(x) {
+function deleteitem(x, data, blogitem) {
   x.parentNode.removeChild(x);
+  blogitem.insertAdjacentHTML('beforeend', data);
 }
