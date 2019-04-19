@@ -206,28 +206,28 @@
   padding-left: 4.5em;
 }
 .ql-editor .ql-indent-1.ql-direction-rtl.ql-align-right {
-  padding-right: 3em;
+  padding-right: 3em !important;
 }
 .ql-editor li.ql-indent-1.ql-direction-rtl.ql-align-right {
-  padding-right: 4.5em;
+  padding-right: 4.5em !important;
 }
 .ql-editor .ql-indent-2:not(.ql-direction-rtl) {
-  padding-left: 6em;
+  padding-left: 6em !important;
 }
 .ql-editor li.ql-indent-2:not(.ql-direction-rtl) {
-  padding-left: 7.5em;
+  padding-left: 7.5em !important;
 }
 .ql-editor .ql-indent-2.ql-direction-rtl.ql-align-right {
-  padding-right: 6em;
+  padding-right: 6em !important;
 }
 .ql-editor li.ql-indent-2.ql-direction-rtl.ql-align-right {
-  padding-right: 7.5em;
+  padding-right: 7.5em !important;
 }
 .ql-editor .ql-indent-3:not(.ql-direction-rtl) {
-  padding-left: 9em;
+  padding-left: 9em !important;
 }
 .ql-editor li.ql-indent-3:not(.ql-direction-rtl) {
-  padding-left: 10.5em;
+  padding-left: 10.5em !important;
 }
 .ql-editor .ql-indent-3.ql-direction-rtl.ql-align-right {
   padding-right: 9em;
@@ -312,10 +312,10 @@
   max-width: 100%;
 }
 .ql-editor .ql-video.ql-align-center {
-  margin: 0 auto;
+  margin: 0 auto !important;
 }
 .ql-editor .ql-video.ql-align-right {
-  margin: 0 0 0 auto;
+  margin: 0 0 0 auto !important;
 }
 .ql-editor .ql-bg-black {
   background-color: #000;
@@ -379,13 +379,13 @@
   text-align: inherit;
 }
 .ql-editor .ql-align-center {
-  text-align: center;
+  text-align: center !important;
 }
 .ql-editor .ql-align-justify {
-  text-align: justify;
+  text-align: justify !important;
 }
 .ql-editor .ql-align-right {
-  text-align: right;
+  text-align: right !important;
 }
 .ql-editor.ql-blank::before {
   color: rgba(0,0,0,0.6);

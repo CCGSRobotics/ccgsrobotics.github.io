@@ -57,7 +57,7 @@ function showError(err) {
 function createArticle(id, published, data) {
   console.log(id);
 	var el = document.createElement('div');
-  el.className = "blogpost " + data.title;
+  el.className = "blogpost ql-editor " + data.title;
   var title = document.createElement('h1');
   var body = document.createElement('p');
   var byline = document.createElement('span');
