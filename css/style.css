@@ -1,0 +1,87 @@
+#editor-container {
+  height: 600px;
+}
+
+
+.placeholder {
+	height: 2000px;
+}
+
+.input {
+  width: 99.5%;
+  display: block;
+  padding: 0.5em 0.25em;
+  border: none;
+  border-radius: 0.3em;
+  font-size: 1.5em;
+  text-align: left;
+  box-shadow: 0 0 1em 0.25em rgba(21, 83, 145,0.2);
+}
+
+.button {
+  width: 100%;
+  display: block;
+  margin: 2em auto;
+  padding: 0.5em 0.25em;
+  border: none;
+  border-radius: 0.3em;
+  font-size: 1.5em;
+  text-align: left;
+  box-shadow: 0 0 1em 0.25em rgba(21, 83, 145,0.2);
+  background: white;
+  color: grey;
+}
+
+.buttonsubmit {
+  width: 150px;
+  display: block;
+  padding: 0.5em 0.25em;
+  border: none;
+  border-radius: 0.3em;
+  font-size: 1.5em;
+  text-align: center;
+  box-shadow: 0 0 1em 0.25em rgba(21, 83, 145,0.2);
+  background: white;
+  color: grey;
+}
+
+.buttonselected {
+  color: black !important;
+}
+
+.loading{
+  border:3px solid #FFFFFF;
+  border-bottom:3px solid rgba(255,255,255,0.0);
+  border-left:3px solid rgba(255,255,255,0.0);
+  background-color:transparent !important;
+  animation-name: rotateAnimation;
+  -webkit-animation-name: wk-rotateAnimation;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  animation-delay: 0.2s;
+  -webkit-animation-delay: 0.2s;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes rotateAnimation {
+    0%   {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+@-webkit-keyframes wk-rotateAnimation {
+    0%   {-webkit-transform: rotate(0deg);}
+    100% {-webkit-transform: rotate(360deg);}
+}
+
+.alert {
+  box-shadow: 0 0 1em 0.25em rgba(244, 66, 66, 0.2) !important;
+}
+
+.finished {
+  box-shadow: 0 0 1em 0.25em rgba(69, 244, 66, 0.2) !important;
+}
+
+.buttonsubmit {
+  width: 101% !important;
+  margin-bottom: 20px;
+}

@@ -16,6 +16,8 @@
   opacity: 0;
 
   transition: 6s;
+
+  width: 100%;
 }
 
 
@@ -55,6 +57,8 @@
   opacity: 0;
 
   transition: 6s;
+
+  width: 100%;
 }
 
 .img_box_right {

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Blog Creator</title>
+
+  <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyB8r3dDr-4aCRuA4VgnKhBCSC3ctsQwZjM",
+      authDomain: "ccgsrobotics-d4422.firebaseapp.com",
+      databaseURL: "https://ccgsrobotics-d4422.firebaseio.com",
+      projectId: "ccgsrobotics-d4422",
+      storageBucket: "ccgsrobotics-d4422.appspot.com",
+      messagingSenderId: "858227198958"
+    };
+    firebase.initializeApp(config);
+  </script>
+  <script src="/__/firebase/5.9.2/firebase-app.js"></script>
+  <script src="/__/firebase/5.9.2/firebase-auth.js"></script>
+  <script src="/__/firebase/init.js"></script>
+
+
+  <link rel='stylesheet' href='http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/monokai-sublime.min.css'>
+  <link rel='stylesheet' href='http://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css'>
+  <link rel='stylesheet' href='css/custom_snow.css'>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/header.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
+
+
+</head>
+
+<header class="cf small transparent">
+		  <nav>
+        <a href="https://ccgsrobotics.github.io/" class="logo">CCGS Robotics Blog Creator</a>
+		  </nav>
+</header>
+
+<body>
+
+  <div class="textbody">
+
+  Firebase sign-in status: <span id="quickstart-sign-in-status">Unknown</span>. Sign in <a href ="signin.html" style="color:#155391 !important;">here</a>.
+
+  <h3>The Blog:</h3>
+
+
+
+  <div id="editor-container"></div>
+
+
+
+<h3>Preview Elements:</h3>
+  <form>
+  <input class="input" type="text" name="firstname" id="Title" placeholder="Blog Title">
+  <div style="height:0px;overflow:hidden">
+  <input id="inputfile" name="inputfile" class="inputfile" type="file" accept="image/*">
+  </div>
+  <button class="button" id="ChooseFile" type="button" onclick="chooseFile()">Choose Image Preview (WIP)</button>
+  </form>
+
+<h3>Only Submit When Ready:</h3>
+<button style="width:100px !important;"  class="buttonsubmit" id="buttonsubmit" type="button" onclick="Submit()">Submit</button>
+
+
+
+  </div>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js'></script>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js'></script>
+  <script src='http://cdn.quilljs.com/1.3.6/quill.js'></script>
+  <script  src="js/index.js"></script>
+  <script  src="js/loadimage.js"></script>
+  <script  src="js/signin.js"></script>
+
+
+
+</body>
+
+
+<div style="opacity:0;">
+  <form>
+  <input class="input" type="text" name="UserName" id="email" placeholder="Email">
+
+  <input class="button" type="password" name="Password" id="password" placeholder="Password">
+  </form>
+
+  <button disabled class="buttonsubmit" id="quickstart-sign-in" type="button" onclick="SignIn()">Sign in</button>
+
+  <button class="buttonsubmit" id="quickstart-password-reset" type="button" onclick="SignIn()">Reset Password</button>
+
+  <button class="buttonsubmit" id="quickstart-blog" type="button" onclick="PostABlog()">Post a Blog</button>
+
+  <br><br><br><br>
+
+  <button disabled class="mdl-button mdl-js-button mdl-button--raised buttonsubmit" id="quickstart-sign-up" name="signup">Sign Up (not available yet! Please see Ken to sign up)</button>
+
+  <button disabled class="mdl-button mdl-js-button mdl-button--raised buttonsubmit" disabled id="quickstart-verify-email" name="verify-email">Send Email Verification (not available yet!)</button>
+
+
+</div>
+
+</html>

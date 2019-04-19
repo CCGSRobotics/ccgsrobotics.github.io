@@ -11,14 +11,15 @@
   <title>CCGS Robotics</title>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
+  <link rel="stylesheet" href="css/loader.css">
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/parralax.css">
   <link rel="stylesheet" href="css/typewriter.css">
   <link rel="stylesheet" href="css/button.css">
   <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/facta.css">
-  <link rel="stylesheet" href="css/loader.css">
+  <link rel="stylesheet" href="css/content.css">
+
 
   <!--<link rel="shortcut icon" type="image/x-icon" href="https://www.ccgs.wa.edu.au/wp-content/themes/christchurchschool/assets/img/favicon.ico">-->
   <link rel="shortcut icon" type="image/x-icon" href="icons/Normal.ico">
@@ -111,6 +112,7 @@ Software Design Networking Algorithms (Pathfinding and Automation) Electronics (
 
 <br></br><br></br>
 
+
 <div class = "facta">
 <img class= "img_box" src="photos/TheProject.png" alt="Icon" style="width:25%;height:25%;" align="top":>
   <h9 class="text_title">Our Mission</h9> <br>
@@ -144,9 +146,12 @@ Software Design Networking Algorithms (Pathfinding and Automation) Electronics (
 
 
 
+
+<div class="content" id="content"><h3>Blog Posts</h3></div>
+
+
+
 </div>
-
-
 
 
 
@@ -159,6 +164,23 @@ Software Design Networking Algorithms (Pathfinding and Automation) Electronics (
 
 <div class="footer">Robotics Club <a href="https://github.com/CCGSRobotics/ccgsrobotics.github.io">[Website source on github]</a></div>
 
+
+<script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyB8r3dDr-4aCRuA4VgnKhBCSC3ctsQwZjM",
+    authDomain: "ccgsrobotics-d4422.firebaseapp.com",
+    databaseURL: "https://ccgsrobotics-d4422.firebaseio.com",
+    projectId: "ccgsrobotics-d4422",
+    storageBucket: "ccgsrobotics-d4422.appspot.com",
+    messagingSenderId: "858227198958"
+  };
+  firebase.initializeApp(config);
+</script>
+<script src="/__/firebase/5.9.2/firebase-app.js"></script>
+<script src="/__/firebase/5.9.2/firebase-auth.js"></script>
+<script src="/__/firebase/init.js"></script>
 <script  src="js/header.js"></script>
 <script  src="js/typewriter.js"></script>
 <script  src="js/button.js"></script>
@@ -166,4 +188,5 @@ Software Design Networking Algorithms (Pathfinding and Automation) Electronics (
 <script  src="js/mobileassist.js"></script>
 <script  src="js/facta.js"></script>
 <script  src="js/loader.js"></script>
+<script  src="js/loadblog.js"></script>
 <!-- FYI jquery at top of html -->
