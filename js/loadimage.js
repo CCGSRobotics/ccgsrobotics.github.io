@@ -24,16 +24,16 @@ function Submit() {
 
   if (document.getElementById("Title").value.length == 0) {
       $(document.getElementById("Title")).addClass("alert");
-      if (document.getElementById("inputfile").value.length == 0) {
-        $(document.getElementById("ChooseFile")).addClass("alert");
-      } else {
-        $(document.getElementById("ChooseFile")).removeClass("alert");
-      }
-  } else if (document.getElementById("inputfile").value.length == 0) {
-      $(document.getElementById("Title")).removeClass("alert");
-      $(document.getElementById("ChooseFile")).addClass("alert");
+      //if (document.getElementById("inputfile").value.length == 0) {
+        //$(document.getElementById("ChooseFile")).addClass("alert");
+      //} else {
+        //$(document.getElementById("ChooseFile")).removeClass("alert");
+      //}
+  //} else if (document.getElementById("inputfile").value.length == 0) {
+  //    $(document.getElementById("Title")).removeClass("alert");
+  //    $(document.getElementById("ChooseFile")).addClass("alert");
   } else {
-  $(document.getElementById("ChooseFile")).removeClass("alert");
+  //$(document.getElementById("ChooseFile")).removeClass("alert");
   $(document.getElementById("Title")).removeClass("alert");
 
   document.getElementById("buttonsubmit").disabled = true;
@@ -47,7 +47,7 @@ function ReloadPage() {
   $(document.getElementById("buttonsubmit")).removeClass("loading");
   $(document.getElementById("buttonsubmit")).addClass("finished");
   document.getElementById("buttonsubmit").textContent = "Finished!";
-  setTimeout(ReloadText, 3000)
+  setTimeout(ReloadText, 1000)
   setTimeout(Reload, 5000)
 }
 
