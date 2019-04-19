@@ -144,8 +144,9 @@ a:visited {
 .textbody {
   padding-top: 100px;
 	padding-left: 20%;
-	width: 60%;
+	width: 80%;
   padding-bottom: 1500px;
+  margin-right: auto !important;
 
 }
 
