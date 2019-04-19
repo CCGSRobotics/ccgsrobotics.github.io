@@ -155,11 +155,15 @@ h3 {
 	color: #155391;
 }
 
-p {
+.normal {
 	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 1em;
 	line-height: 1.5;
 	color: #27282b;
+}
+
+p {
+  color: white;
 }
 
 .feedback {

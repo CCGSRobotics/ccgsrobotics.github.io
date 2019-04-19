@@ -55,15 +55,15 @@ function showError(err) {
 }
 
 function createArticle(id, published, data) {
-  console.log(id)
+  console.log(id);
 	var el = document.createElement('div');
-  el.className = "blogpost";
+  el.className = "blogpost " + data.title;
   var title = document.createElement('h1');
   var body = document.createElement('p');
   var byline = document.createElement('span');
   title.innerHTML = data.title;
   //body.innerHTML = '<a onclick="LoadBlog(' + data.title + ')" href="#">Read More...</a>'
-  body.innerHTML = '<button onclick="LoadBlog(' + data.title + ')" href="#">Read More...</button>'
+  body.innerHTML = '<button class=\"' + id + '\" onclick="ReadMore(\'' + data.title + '\',\'' + id + '\')">Read More...</button>';
   byline.innerHTML = 'Date: '+ new Date(published) +'<hr>';
   el.appendChild(title)
   el.appendChild(byline)
@@ -113,4 +113,26 @@ function Test() {
 
 function SignInPage() {
   window.location = "signin.html";
+}
+
+function ReadMore(name, id) {
+  var data = "";
+  var button = document.getElementsByClassName(id)[0];
+  var blogitem = document.getElementsByClassName(name)[0];
+
+  firebase.database().ref('/article_group/article/'+id+'/body/').on('value', function(articleData) {
+      data = articleData.val()
+  });
+
+
+  button.style.opacity = "0";
+
+  setTimeout(deleteitem, 1000, button);
+
+
+  blogitem.insertAdjacentHTML('beforeend', data);
+}
+
+function deleteitem(x) {
+  x.parentNode.removeChild(x);
 }
