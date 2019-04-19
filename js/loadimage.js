@@ -99,13 +99,7 @@ function Upload() {
     console.log(error);
     alert(error.message)
   });
-
-
-
-
 }
-
-
 
 function showError(err) {
 	var el = document.createElement('div');
