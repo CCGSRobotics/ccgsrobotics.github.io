@@ -110,3 +110,7 @@ let provider = new firebase.auth.GoogleAuthProvider();
 function Test() {
   firebase.auth().signInWithPopup(provider);
 }
+
+function SignInPage() {
+  window.location = "signin.html";
+}
