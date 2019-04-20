@@ -25,10 +25,19 @@ window.articles = [];
 firebase.database().ref('/article_group/article_list')
   .orderByChild('published').limitToLast(limit).startAt(1)
 	.on('child_added', function(data) {
+    var percent = 0;
+    load = document.getElementsByClassName("progress")[0];
 
+    $('html').css({'overflow-y':'hidden'});
   	firebase.database().ref('/article_group/article/' + data.key)
       .on('value', function(articleData) {
+
       	count ++;
+
+        percent = (count / limit) * 100
+        load.style.width = percent+"%";
+        load.style.opacity = "1";
+
         articles.push({
         	id: data.key,
           published: data.val().published,
@@ -57,6 +66,16 @@ function producer() {
     for (var i in articles) {
       createArticle(articles[i].id, articles[i].published, articles[i].data)
     }
+    $('html').css({'overflow-y':'visible'});
+    if ($(window).scrollTop() == 0) {
+
+      window.scrollBy({
+      top: 750, // could be negative value
+      left: 0,
+      behavior: 'smooth'
+      });
+    };
+
     flag = false
   }
 }
