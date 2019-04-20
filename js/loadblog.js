@@ -72,39 +72,7 @@ function createArticle(id, published, data) {
 
 }
 
-var submitButton = document.querySelector('#submit-button');
-var titleText = document.querySelector('#title');
-var bodyText = document.querySelector('#body');
 
-submitButton.addEventListener('click', function(){
-	var title = titleText.value;
-  var body = bodyText.value;
-  var articleRef = '/article_group/';
-  var articleData = {
-  	title: title,
-    body: body,
-    date_edited: firebase.database.ServerValue.TIMESTAMP,
-    uid: 'user1',
-    slug_name: title.replace(/\s/g, '-')
-  };
-  var key = firebase.database().ref(articleRef + 'article').push().key;
-
-  var updates = {};
-  updates[articleRef + 'article/' + key] = articleData;
-  updates[articleRef + 'article_list/' + key] = {
-    published: firebase.database.ServerValue.TIMESTAMP
-}
-
-  return firebase.database().ref().update(updates)
-  .then(function(){
-  	alert('Added '+ title);
-  })
-  .catch(function(error) {
-  console.log(error);
-  alert(error.message)
-  });
-
-});
 
 let provider = new firebase.auth.GoogleAuthProvider();
 function Test() {
