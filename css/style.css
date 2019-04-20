@@ -30,6 +30,16 @@
   box-shadow: 0 0 1em 0.25em rgba(21, 83, 145,0.2);
   background: white;
   color: grey;
+  transition: 1s;
+}
+
+.loadit {
+  animation: load 1s infinite;
+}
+
+@keyframes load {
+  from { box-shadow: 0 0 1em 0.25em rgba(21, 83, 145,0.5); }
+  to { box-shadow: 0 0 1em 0.25em rgba(21, 83, 145,0.0); }
 }
 
 .buttonsubmit {

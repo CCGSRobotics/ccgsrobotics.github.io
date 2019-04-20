@@ -30,6 +30,7 @@ function toggleSignIn() {
     $(document.getElementById("password")).removeClass("alert");
     // Sign in with email and pass.
     // [START authwithemail]
+    $(document.getElementById("quickstart-sign-in")).addClass("loadit");
     firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
       // Handle Errors here.
       var errorCode = error.code;
@@ -48,6 +49,7 @@ function toggleSignIn() {
     $(document.getElementById("password")).removeClass("alert");
     // [END authwithemail]
   }
+
   document.getElementById('quickstart-sign-in').disabled = true;
 }
 /**
@@ -145,6 +147,7 @@ function initApp() {
       $(document.getElementById("quickstart-blog")).removeClass("alert");
       document.getElementById("quickstart-blog").disabled = false;
       document.getElementById('quickstart-sign-in').textContent = 'Sign out';
+      $(document.getElementById("quickstart-sign-in")).removeClass("loadit");
 
       // document.getElementById('quickstart-account-details').textContent = JSON.stringify(user, null, '  ');
       if (!emailVerified) {
