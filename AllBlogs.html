@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<!-- Google analytics not set up -->
+
+<!-- Need help on back end development -->
+
+<head>
+  <meta charset="UTF-8">
+
+  <title>CCGS Robotics Blogs</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="css/custom_snow.css">
+  <link rel="stylesheet" href="css/loader.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/parralax.css">
+  <link rel="stylesheet" href="css/typewriter.css">
+  <link rel="stylesheet" href="css/button.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/facta.css">
+  <link rel="stylesheet" href="css/content.css">
+
+
+
+  <!--<link rel="shortcut icon" type="image/x-icon" href="https://www.ccgs.wa.edu.au/wp-content/themes/christchurchschool/assets/img/favicon.ico">-->
+  <link rel="shortcut icon" type="image/x-icon" href="icons/Normal.ico">
+
+
+
+</head>
+
+<link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
+
+<header class="cf">
+		  <nav>
+        <a href="index.html" class="logo">CCGS Robotics</a>
+
+        <div class="randomdiv" id="randomdiv">
+        <a class="logosub" href="https://www.thingiverse.com/groups/ccgs-robotics/things">Designs</a>
+        <a href="AllBlogs.html" class="logosub">Blog Posts</a>
+        <a href="https://github.com/CCGSRobotics" class="logosub" >Github</a>
+        <a href="AllBlogs.html" class="logosub" >Blog Posts</a>
+        </div>
+		  </nav>
+</header>
+
+
+<div class="body">
+
+<!-- Preloader -->
+
+<div id="preloader">
+<div id="status" style="text-align: center;">
+
+Loading.
+
+</div></div>
+
+
+
+
+<div class="container">
+<div class="parallax"></div>
+
+<div class="centered">
+
+<div class='console-container'><span id='text'></span><div class='console-underscore' id='console'>&#95;</div></div>
+
+</div>
+</div>
+
+
+  <!-- grey rounded box appears when hovering on link-->
+
+
+
+
+<div style="text-align: center;margin-top:10px;" class="content" id="content"><h3>All Blog Posts</h3></div>
+
+
+
+</div>
+
+<div id="mybutton">
+<button class="feedback" onclick="SignInPage()">
+<img height="32px" width="32px" src="css/baseline-face-24px.svg"></img>
+</button>
+</div>
+
+
+<div class="placeholder">
+  <!-- add space to bottom of website the lazy way-->
+</div>
+
+</div>
+
+<div style="margin-top:4000px;" class="footer">Robotics Club <a href="https://github.com/CCGSRobotics/ccgsrobotics.github.io">[Website source on github]</a></div>
+
+
+<script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyB8r3dDr-4aCRuA4VgnKhBCSC3ctsQwZjM",
+    authDomain: "ccgsrobotics-d4422.firebaseapp.com",
+    databaseURL: "https://ccgsrobotics-d4422.firebaseio.com",
+    projectId: "ccgsrobotics-d4422",
+    storageBucket: "ccgsrobotics-d4422.appspot.com",
+    messagingSenderId: "858227198958"
+  };
+  firebase.initializeApp(config);
+</script>
+<script src="/__/firebase/5.9.2/firebase-app.js"></script>
+<script src="/__/firebase/5.9.2/firebase-auth.js"></script>
+<script src="/__/firebase/init.js"></script>
+<script  src="js/header.js"></script>
+<script  src="js/typewriter.js"></script>
+<script  src="js/button.js"></script>
+<script  src="js/onscroll.js"></script>
+<script  src="js/mobileassist.js"></script>
+<script  src="js/facta.js"></script>
+<script  src="js/loader.js"></script>
+<script  src="js/loadblog.js"></script>
+<!-- FYI jquery at top of html -->

@@ -1,7 +1,7 @@
 // function([string1, string2],target id,[color1,color2])
 
 // All taken from: https://codepen.io/Tbgse/pen/dYaJyJ
- consoleText(['Kings Legacy.', 'The CCGS Robotics Club.', 'View blog posts on OARKit.'], 'text',['white','white','white']);
+ consoleText(['Kings Legacy.', 'The CCGS Robotics Club.', 'View blog posts on Blog Posts page.'], 'text',['white','white','white']);
 
 function consoleText(words, id, colors) {
   if (colors === undefined) colors = ['#fff'];

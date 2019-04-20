@@ -6,21 +6,11 @@ var config = {
   databaseURL: "https://ccgsrobotics-d4422.firebaseio.com"
 };
 
-
-$(window).on('load', function() {
-
-  window.count = 0;
-  firebase.database().ref('/article_group/').child("article_list").on("value", function(snapshot) {
-    window.limit = snapshot.numChildren()
-    console.log(limit);
-//PUT FURTHER CODE HERE AS THIS ENSURES THAT THE DATABASE HAS LOADED
-
-
-
-
- window.trueData = limit;
- window.flag = true;
-window.articles = [];
+ var limit = 4;
+ var count = 0;
+ var trueData = 4;
+ var flag = true;
+var articles = [];
 
 firebase.database().ref('/article_group/article_list')
   .orderByChild('published').limitToLast(limit).startAt(1)
@@ -47,9 +37,6 @@ firebase.database().ref('/article_group/article_list')
   }, function(err) {
     alert(err);
   })
-});
-
-});
 
 function producer() {
   console.log(count, trueData)
