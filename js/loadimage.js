@@ -37,14 +37,14 @@ function Submit() {
   $(document.getElementById("Title")).removeClass("alert");
 
   document.getElementById("buttonsubmit").disabled = true;
-  $(document.getElementById("buttonsubmit")).addClass("loading");
+  $(document.getElementById("buttonsubmit")).addClass("loadit");
   document.getElementById("buttonsubmit").textContent = "Loading";
   Upload()
 
 }
 }
 function ReloadPage() {
-  $(document.getElementById("buttonsubmit")).removeClass("loading");
+  $(document.getElementById("buttonsubmit")).removeClass("loadit");
   $(document.getElementById("buttonsubmit")).addClass("finished");
   document.getElementById("buttonsubmit").textContent = "Finished!";
   setTimeout(ReloadText, 1000)
