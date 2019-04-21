@@ -89,5 +89,5 @@ function showblog() {
 
   setTimeout(function() {
     $(x).removeClass("highlight");
-  }, 4000)
+  }, 6000)
 }
