@@ -193,3 +193,15 @@ p {
 #mybutton:hover {
   opacity: 1;
 }
+
+.highlight {
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 1);
+  border-radius: 10px;
+  animation: highl 2s infinite;
+}
+
+@keyframes highl {
+  0% { box-shadow: 0px 0px 25px rgba(0, 0, 0, 0); }
+  50% { box-shadow: 0px 0px 25px rgba(0, 0, 0, 1); }
+  100% { box-shadow: 0px 0px 25px rgba(0, 0, 0, 0); }
+}

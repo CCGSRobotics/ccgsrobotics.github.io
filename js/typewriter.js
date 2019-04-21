@@ -1,7 +1,7 @@
 // function([string1, string2],target id,[color1,color2])
 
 // All taken from: https://codepen.io/Tbgse/pen/dYaJyJ
- consoleText(['Kings Legacy.', 'The CCGS Robotics Club.', 'View blog posts on Blog Posts page.'], 'text',['white','white','white']);
+ consoleText(['Kings Legacy.', 'The CCGS Robotics Club.', 'View all Blogs Here.'], 'text',['white','white','white']);
 
 function consoleText(words, id, colors) {
   if (colors === undefined) colors = ['#fff'];
@@ -15,6 +15,7 @@ function consoleText(words, id, colors) {
   window.setInterval(function() {
 
     if (letterCount === 0 && waiting === false) {
+
       waiting = true;
       target.innerHTML = words[0].substring(0, letterCount)
       window.setTimeout(function() {
@@ -26,6 +27,13 @@ function consoleText(words, id, colors) {
         target.setAttribute('style', 'color:' + colors[0])
         letterCount += x;
         waiting = false;
+        if (usedWord == "The CCGS Robotics Club.") {
+        if (elementInViewport(target)) {
+          showblog();
+        }
+      }
+
+
       }, 1000)
     } else if (letterCount === words[0].length + 1 && waiting === false) {
       waiting = true;
@@ -50,4 +58,36 @@ function consoleText(words, id, colors) {
       visible = true;
     }
   }, 400)
+}
+
+
+
+function elementInViewport(el) {
+var top = el.offsetTop;
+var left = el.offsetLeft;
+var width = el.offsetWidth;
+var height = el.offsetHeight;
+
+while(el.offsetParent) {
+  el = el.offsetParent;
+  top += el.offsetTop;
+  left += el.offsetLeft;
+}
+
+return (
+  top >= window.pageYOffset &&
+  left >= window.pageXOffset &&
+  (top + height) <= (window.pageYOffset + window.innerHeight) &&
+  (left + width) <= (window.pageXOffset + window.innerWidth)
+);
+}
+
+
+function showblog() {
+  var x = document.getElementById('blogposts');
+  $(x).addClass("highlight");
+
+  setTimeout(function() {
+    $(x).removeClass("highlight");
+  }, 4000)
 }
