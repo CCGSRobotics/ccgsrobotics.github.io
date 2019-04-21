@@ -98,10 +98,14 @@ function sendEmailVerification() {
 }
 function sendPasswordReset() {
   var email = document.getElementById('email').value;
+
+  $(document.getElementById("quickstart-password-reset")).addClass("loadit");
+  console.log("start");
   // [START sendpasswordemail]
   firebase.auth().sendPasswordResetEmail(email).then(function() {
     // Password Reset Email Sent!
     // [START_EXCLUDE]
+    $(document.getElementById("quickstart-password-reset")).removeClass("loadit");
     $(document.getElementById("quickstart-password-reset")).addClass("finished");
     // [END_EXCLUDE]
   }).catch(function(error) {
@@ -110,15 +114,21 @@ function sendPasswordReset() {
     var errorMessage = error.message;
     // [START_EXCLUDE]
     if (errorCode == 'auth/invalid-email') {
+      $(document.getElementById("quickstart-password-reset")).removeClass("loadit");
       $(document.getElementById("email")).addClass("alert");
     } else if (errorCode == 'auth/user-not-found') {
+      $(document.getElementById("quickstart-password-reset")).removeClass("loadit");
       $(document.getElementById("email")).addClass("alert");
       alert(errorMessage);
     }
-    $(document.getElementById("email")).removeClass("alert");
+
     console.log(error);
+    $(document.getElementById("quickstart-password-reset")).removeClass("loadit");
+    $(document.getElementById("email")).addClass("alert");
     // [END_EXCLUDE]
   });
+  
+  $(document.getElementById("email")).removeClass("alert");
   // [END sendpasswordemail];
 }
 /**
