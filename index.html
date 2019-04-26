@@ -6,6 +6,15 @@
 <!-- Need help on back end development -->
 
 <head>
+  {% if site.google_analytics %}
+      <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', '{{ site.google_analytics }}');
+      </script>
+  {% endif %}
   <meta charset="UTF-8">
 
   <title>CCGS Robotics</title>
@@ -196,3 +205,4 @@ towards the end goal of building robots to save lives.
 <script  src="js/loader.js"></script>
 <script  src="js/loadblogTop4.js"></script>
 <!-- FYI jquery at top of html -->
+<!-- If you found this Good JOb *emotional support pls*-Ken -->
