@@ -9,7 +9,7 @@
 
   top: -250px;
   /* Set a specific height */
-  height: 800px;
+  height: 100vh;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
