@@ -64,7 +64,9 @@ function createArticle(id, published, data) {
   title.innerHTML = data.title;
   //body.innerHTML = '<a onclick="LoadBlog(' + data.title + ')" href="#">Read More...</a>'
   body.innerHTML = '<button class=\"' + id + '\" onclick="ReadMore(\'' + data.title + '\',\'' + id + '\')">Read More...</button>';
-  byline.innerHTML = 'Date: '+ new Date(published) +'<hr>';
+  var date = new Date(published) + '';
+
+  byline.innerHTML = 'Date: '+ date.split(" ").slice(0,4).join(" ") +'<hr>';
   el.appendChild(title)
   el.appendChild(byline)
   el.appendChild(body)
