@@ -10,7 +10,7 @@ $(document).on("scroll", function () {
 
 
 $(window).on('load', function() {
-  var parallax = $( ".parallax" ), speed = -0.6;
+  var parallax = $( ".parallax" ), speed = -0.3;
 
   window.onscroll = function(){
     [].slice.call(parallax).forEach(function(el,i){
