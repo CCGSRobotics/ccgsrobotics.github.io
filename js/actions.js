@@ -66,6 +66,7 @@ firebase.auth().onAuthStateChanged(function(user) {
         $("#displayicon").attr("src",photoURL);
       }
 
+      
       console.log(displayName);
       console.log(photoURL);
       
@@ -81,3 +82,21 @@ firebase.auth().onAuthStateChanged(function(user) {
 
     // [END_EXCLUDE]
   });
+
+function liveupdate() {
+    var displayName = firebase.auth().currentUser.displayName;
+    var photoURL = firebase.auth().currentUser.photoURL;
+
+    if (displayName != null) {
+      $("#displayname").text(displayName);
+    } else {
+      $("#displayname").text("Displayname not set.");
+    }
+
+    if (photoURL != null) {
+      $("#displayicon").attr("src",photoURL);
+    }
+    
+}
+
+setInterval(liveupdate, 2000)
