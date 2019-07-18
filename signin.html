@@ -20,69 +20,49 @@
   </script>
 
 
-
-
-  <link rel='stylesheet' href='css/custom_snow.css'>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/header.css">
-
-  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
+<link rel='stylesheet' href='css/signinnew.css'>
+<link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
 
 
 </head>
+<div class="container">
+    <div class="left">
+      <div class="header">
+        <h2 class="animation a1" id="title">Welcome Back</h2>
+        <h4 class="animation a2" id="text">Log in to your account using your email and password</h4>
+      </div>
 
-<header class="cf small transparent">
-		  <nav>
-        <a href="https://ccgsrobotics.github.io/" class="logo">CCGS Robotics Sign In</a>
-        <a href="AllBlogs.html" class="logosub" >Blogs</a>
-		  </nav>
-</header>
+        <div class="form">
 
-<body>
+            <input type="email" id="email" class="form-field animation a3" placeholder="Email Address">
+            <input type="password" id="password" class="form-field animation a4" placeholder="Password">
+        </div>
 
-  <div class="textbody">
+        <div class="form">
+            
+            <button class="animation a5 button" id="quickstart-sign-in">LOGIN</button>
+            <p class="animation a6"><a href="index.html">Take Me Home</a></p>
+            <p class="animation a6" id="rem"><a href="#" id="quickstart-password-reset">Forgot Password</a></p>
+        </div>
 
-  <h3>Sign In</h3>
+        <div class="form"><div class="header">
 
+            <h4 style="display: none; text-align: right;" id="statetext" class="animation a1" style="margin: 10px 0px 0px 0px;">Please check your inbox.</h4>
 
-  <form>
-  <input class="input" type="text" name="UserName" id="email" placeholder="Email">
-
-  <input class="button" type="password" name="Password" id="password" placeholder="Password">
-  </form>
-
-  <button disabled class="buttonsubmit" id="quickstart-sign-in" type="button">Sign In</button>
-
-  <button class="buttonsubmit" id="quickstart-password-reset" type="button">Reset Password</button>
-
-  <h3>Actions:</h3>
-
-  <button class="buttonsubmit" id="quickstart-blog" type="button" onclick="PostABlog()">Post a Blog</button>
-
-  <br><br><br><br>
-
-  <button disabled class="mdl-button mdl-js-button mdl-button--raised buttonsubmit" id="quickstart-sign-up" name="signup">Sign Up (not available yet! Please see an Admin to sign up)</button>
-
-  <button disabled class="mdl-button mdl-js-button mdl-button--raised buttonsubmit" disabled id="quickstart-verify-email" name="verify-email">Send Email Verification (not available yet!)</button>
-
-
-
-  <p style="margin-top:40px; color:black;">To sign up please contact Ken or Roman.</p>
-  <div class="blacktext">
-  <div class="quickstart-user-details-container">
-    Firebase sign-in status: <span id="quickstart-sign-in-status">Unknown</span>
-    <div>Firebase auth<code>currentUser</code> object value:</div>
-    <pre><code id="quickstart-account-details"></code></pre>
+        </div></div>
+        
+    </div>
+    <div class="right"></div>
   </div>
-</div>
+
 
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 
 
-  <script  src="js/loadimage.js"></script>
-  <script  src="js/signin.js"></script>
+  
+  <script  src="js/signinnew.js"></script>
 
 
 

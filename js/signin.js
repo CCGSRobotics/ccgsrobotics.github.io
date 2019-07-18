@@ -153,7 +153,6 @@ function initApp() {
       var uid = user.uid;
       var providerData = user.providerData;
       // [START_EXCLUDE]
-      document.getElementById('quickstart-sign-in-status').textContent = 'Signed in';
       $(document.getElementById("quickstart-blog")).removeClass("alert");
       document.getElementById("quickstart-blog").disabled = false;
       document.getElementById('quickstart-sign-in').textContent = 'Sign out';
@@ -169,7 +168,6 @@ function initApp() {
       // [START_EXCLUDE]
       $(document.getElementById("quickstart-blog")).addClass("alert");
       document.getElementById("quickstart-blog").disabled = true;
-      document.getElementById('quickstart-sign-in-status').textContent = 'Signed out';
       document.getElementById('quickstart-sign-in').textContent = 'Sign in';
       // document.getElementById('quickstart-account-details').textContent = 'null';
       // [END_EXCLUDE]

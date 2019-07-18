@@ -1,0 +1,73 @@
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+  
+    <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyB8r3dDr-4aCRuA4VgnKhBCSC3ctsQwZjM",
+        authDomain: "ccgsrobotics-d4422.firebaseapp.com",
+        databaseURL: "https://ccgsrobotics-d4422.firebaseio.com",
+        projectId: "ccgsrobotics-d4422",
+        storageBucket: "ccgsrobotics-d4422.appspot.com",
+        messagingSenderId: "858227198958"
+      };
+      firebase.initializeApp(config);
+    </script>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel='stylesheet' href='css/actions.css'>
+  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
+  
+  
+  </head>
+
+  
+
+<!-- nav -->
+<nav class="l-nav">
+    <div class="profile l-inline">
+        <img class="profile-pic" id="displayicon" src="Profile-01.png" />
+        <h4 class="profile-title" id="displayname">Loading...</h4>
+    </div>
+    <ul class="l-stacked">
+      <li>
+        <a href="#" class="is-active trans" id="blo">
+          <span>Blog Upload</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="trans" id="pro">
+          <span>Profile</span>
+        </a>
+      </li>
+      <li>
+        <a href="index.html" class="trans" id="pro">
+            <span>Website</span>
+        </a>
+          </li>
+      <li>
+        <a href="#" id="signout" class="trans">
+            <span>Sign Out</span>
+        </a>
+        </li>
+    </ul>
+  </nav>
+  
+ <iframe id="cont" src="blogcreate.html" frameborder="0">
+
+
+ </iframe>
+
+<script  src="js/actions.js"></script>
+  <!-- header -->
+  
+  
+  
+  
+  
+  
+  
+  
+   

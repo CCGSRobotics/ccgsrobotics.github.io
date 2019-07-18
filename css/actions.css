@@ -1,0 +1,168 @@
+@charset "UTF-8";
+/*
+|-base
+|----CSS Reset
+|----CSS Normalize
+|-layout
+|----.l-nav
+|----.l-stacked
+|----.l-inline
+|----.l-header
+|----.l-section
+|-module (可單獨存在且可重複使用的組件)
+|----.profile
+|----.profile-detail
+|----.featrues
+|----.ratings
+|-state (layout、module 狀態變化)
+|----.is-active
+|----.is-error
+*/
+/* reset */
+html, body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  color: #202020;
+  font-family: "Helvetica", "Open Sans", "Arial";
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.trans {
+  transition: 1s;
+}
+
+/* layout */
+.l-nav {
+  display: block;
+  position: fixed;
+  width: 360px;
+  height: 100%;
+  background-color: #ffffff;
+  /* state */
+}
+.l-nav ul {
+  font-size: 14px;
+}
+.l-nav ul > li > a {
+  display: block;
+  padding: 15px 25px;
+  color: #92A1A2;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.l-nav ul > li > a:hover {
+  color: #FFF;
+  background: #22303d;
+}
+.l-nav ul i.fa {
+  margin: 0 10px;
+  color: #92A1A2;
+  font-size: 20px;
+}
+.l-nav .is-active {
+  color: #FFF;
+  background: #22303d;
+}
+.l-nav .is-active > i.fa {
+  color: #1EE494;
+}
+
+.l-stacked > * {
+  display: block;
+}
+
+.l-inline > * {
+  display: inline-block;
+}
+
+.l-header {
+  float: right;
+  width: 75%;
+  height: 80px;
+  border-bottom: 1px solid #92A1A2;
+}
+
+.l-section {
+  float: right;
+  width: 75%;
+  height: 80px;
+  border-bottom: 1px solid #92A1A2;
+}
+
+/* module */
+.profile {
+  padding: 10px 15px;
+  height: 80px;
+  background-color: #ffffff;
+  box-sizing: border-box;
+}
+.profile .profile-pic {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.profile .profile-title {
+  margin: 0 0 0 10px;
+  color: #000000;
+}
+
+.profile-title {
+  position: relative;
+  top: -40%;
+}
+
+.profile-detail {
+  padding: 30px;
+  background-color: #FFF;
+}
+.profile-detail .profile-pic {
+  width: 150px;
+  height: 150px;
+}
+.profile-detail .profile-box {
+  vertical-align: middle;
+  padding: 0 20px;
+}
+.profile-detail .profile-box .profile-title {
+  margin: 0 0 0 10px;
+  margin: 0;
+  color: #000;
+  font-size: 28px;
+}
+.profile-detail .profile-box .profile-desc {
+  margin: 5px 0;
+  color: #92A1A2;
+}
+.profile-detail .profile-box .profile-desc > a {
+  cursor: pointer;
+}
+
+.featrues {
+  margin: 0 0 0 10px;
+}
+.featrues > li > a {
+  color: #92A1A2;
+  font-size: 20px;
+}
+.featrues > li > a:hover, .featrues > li > a:active {
+  color: #1EE494;
+}
+.featrues i.fa {
+  margin: 30px 5px;
+}
+
+iframe {
+    position: fixed;
+    left: 360px;
+    width: calc(100% - 360px); 
+    height: 100vh;
+}
+

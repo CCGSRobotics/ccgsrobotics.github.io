@@ -1,0 +1,52 @@
+<head>
+        <meta charset="UTF-8">
+        <title>Dashboard</title>
+      
+        <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
+        <script>
+          // Initialize Firebase
+          var config = {
+            apiKey: "AIzaSyB8r3dDr-4aCRuA4VgnKhBCSC3ctsQwZjM",
+            authDomain: "ccgsrobotics-d4422.firebaseapp.com",
+            databaseURL: "https://ccgsrobotics-d4422.firebaseio.com",
+            projectId: "ccgsrobotics-d4422",
+            storageBucket: "ccgsrobotics-d4422.appspot.com",
+            messagingSenderId: "858227198958"
+          };
+          firebase.initializeApp(config);
+        </script>
+      
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/header.css">
+      
+      <link rel='stylesheet' href='css/profile.css'>
+      <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
+      
+</head>
+
+
+<body>
+
+        <div class="positioning">
+        <div class="blacktext">
+        <!--Firebase sign-in status: <span id="quickstart-sign-in-status">Unknown</span>. Sign in <a href ="signin.html" style="color:#155391 !important;">here</a>.-->
+        </div>
+        <h2>Profile Update:</h2>
+
+        <h3>Display Name:</h3>
+        <input class="input" type="text" name="firstname" id="display" placeholder="your name">
+        <h3>Profile Icon Link:</h3>
+        <input class="input" type="text" name="firstname" id="prof" placeholder="data:image/png;base64,...">
+      
+      <h3>Only Update When Ready:</h3>
+      <button style="width:150px !important;"  class="buttonsubmit" id="updateprof" type="button" onclick="Submit()">Update</button>
+      <p style="color: #155391;">Reload when done.</p>
+      
+      
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="js/profile.js"></script>
+      
+      
+      
+      </body>
