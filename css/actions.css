@@ -108,6 +108,7 @@ li {
   width: 60px;
   height: 60px;
   border-radius: 50%;
+  object-fit: cover;
 }
 .profile .profile-title {
   margin: 0 0 0 10px;

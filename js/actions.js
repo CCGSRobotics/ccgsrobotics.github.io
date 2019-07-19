@@ -96,6 +96,8 @@ function liveupdate() {
     if (photoURL != null) {
       $("#displayicon").attr("src",photoURL);
     }
+
+    
     
 }
 
