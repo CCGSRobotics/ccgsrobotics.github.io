@@ -24,3 +24,5 @@ Once we have robots we drive them on the terrain outside of TG11 in the D&T Depa
 [Team Description Paper 2018](https://github.com/CCGSRobotics/ccgsrobotics.github.io/blob/master/Resources/TDP%202018%20Final.pdf)
 
 [User Documentation](https://github.com/CCGSRobotics/ccgsrobotics.github.io/blob/master/Resources/User%20Documentation.pdf)
+
+FYI Website code is very badly structured and requires a major cleanup. (Enter at own risk).
