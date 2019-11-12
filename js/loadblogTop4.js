@@ -82,7 +82,11 @@ function Test() {
 }
 
 function SignInPage() {
+  if (firebase.auth().currentUser) {
+    window.location = "actions.html";
+} else {
   window.location = "signin.html";
+}
 }
 
 function ReadMore(name, id) {
