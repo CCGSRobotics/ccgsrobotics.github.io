@@ -1,0 +1,54 @@
+<head>
+        <meta charset="UTF-8">
+        <title>Loans</title>
+
+        <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
+        <script>
+          // Initialize Firebase
+          var config = {
+            apiKey: "AIzaSyB8r3dDr-4aCRuA4VgnKhBCSC3ctsQwZjM",
+            authDomain: "ccgsrobotics-d4422.firebaseapp.com",
+            databaseURL: "https://ccgsrobotics-d4422.firebaseio.com",
+            projectId: "ccgsrobotics-d4422",
+            storageBucket: "ccgsrobotics-d4422.appspot.com",
+            messagingSenderId: "858227198958"
+          };
+          firebase.initializeApp(config);
+        </script>
+
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/header.css">
+
+      <link rel='stylesheet' href='css/profile.css'>
+      <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
+
+</head>
+
+<link rel="stylesheet" href="css/button.css">
+<body>
+
+        <div class="positioning">
+        <div class="blacktext">
+        <!--Firebase sign-in status: <span id="quickstart-sign-in-status">Unknown</span>. Sign in <a href ="signin.html" style="color:#155391 !important;">here</a>.-->
+        </div>
+        <h2 style="margin-bottom:40px">Loans:</h2>
+
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSf2cUgzJ90Rwvn4lC3yRj9-sT_Fld8Esso2AmGYK1L38EYEzw/viewform">
+        	<button class="bubbly-button" style="margin-bottom:0px">Borrow Items</button>
+        </a>
+        <p class="normal">Click this button when you are <strong>borrowing</strong> items from CCGS Robotics. This may include taking a Jetson Nano, Raspberry Pi, Camera, etc.</p>
+
+        <br>
+
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdjxIcYYFLMQcsgDraXGzftZr9fVR2yq4VmnZz23sE_MzhQkA/viewform">
+        	<button class="bubbly-button" style="margin-bottom:0px">Return Items</button>
+        </a>
+        <p class="normal">Click this button when you are <strong>returning</strong> items to CCGS Robotics. This may include giving back a Jetson Nano, Raspberry Pi, Camera, etc.</p>
+
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script  src="js/button.js"></script>
+
+
+
+      </body>

@@ -29,8 +29,11 @@ document.getElementById('pro').addEventListener('click', profile, false);
 
 document.getElementById('blo').addEventListener('click', blog, false);
 
+document.getElementById('loan').addEventListener('click', loans, false);
+
 function profile() {
     $("#blo").removeClass("is-active")
+    $("#loan").removeClass("is-active")
     $("#pro").addClass("is-active")
     document.getElementById('cont').src = "profile.html";
 }
@@ -38,7 +41,15 @@ function profile() {
 function blog() {
     $("#blo").addClass("is-active")
     $("#pro").removeClass("is-active")
+    $("#loan").removeClass("is-active")
     document.getElementById('cont').src = "blogcreate.html";
+}
+
+function loans() {
+    $("#blo").removeClass("is-active")
+    $("#pro").removeClass("is-active")
+    $("#loan").addClass("is-active")
+    document.getElementById('cont').src = "loans.html";
 }
 
 firebase.auth().onAuthStateChanged(function(user) {
@@ -66,15 +77,15 @@ firebase.auth().onAuthStateChanged(function(user) {
         $("#displayicon").attr("src",photoURL);
       }
 
-      
+
       console.log(displayName);
       console.log(photoURL);
-      
+
       // [END_EXCLUDE] loadit finished
     } else {
       // User is signed out.
       // [START_EXCLUDE]
-     
+
       // document.getElementById('quickstart-account-details').textContent = 'null';
       // [END_EXCLUDE]
     }
@@ -97,8 +108,8 @@ function liveupdate() {
       $("#displayicon").attr("src",photoURL);
     }
 
-    
-    
+
+
 }
 
 setInterval(liveupdate, 2000)
