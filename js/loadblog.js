@@ -10,7 +10,7 @@ var config = {
 $(window).on('load', function() {
   alert("This blogging system is now depracated. Please do not use this system any more.")
 
-  /*window.count = 0;
+  window.count = 0;
   firebase.database().ref('/article_group/').child("article_list").on("value", function(snapshot) {
     window.limit = snapshot.numChildren()
     console.log(limit);
@@ -57,11 +57,11 @@ firebase.database().ref('/article_group/article_list')
   }, function(err) {
     alert(err);
   })
-});*/
+});
 
 });
 
-/*function producer() {
+function producer() {
   console.log(count, trueData)
   if (count === trueData && flag) {
     for (var i in articles) {
@@ -135,4 +135,3 @@ function deleteitem(x, data, blogitem) {
   x.parentNode.removeChild(x);
   blogitem.insertAdjacentHTML('beforeend', data);
 }
-*/
