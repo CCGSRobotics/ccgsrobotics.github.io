@@ -8,7 +8,6 @@ var config = {
 
 
 $(window).on('load', function() {
-  alert("This blogging system is now depracated. Please do not use this system any more.")
 
   window.count = 0;
   firebase.database().ref('/article_group/').child("article_list").on("value", function(snapshot) {
